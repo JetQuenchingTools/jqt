@@ -1,4 +1,6 @@
-# JetToyHI
+# Jet Quenching Tools (jqt) 
+
+  - moved JetToyHI - no changes in implementation
 
 ## Software
 
