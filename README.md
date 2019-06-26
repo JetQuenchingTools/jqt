@@ -21,7 +21,7 @@ If you are using mac or linux, the steps are relatively straightforward.  For wi
 Make sure that the root-config, pythia8-config and fastjet-config executables can be found in the $PATH environment variable.  Once the above is done, we can proceed with the compilation of the JetToyHI code:
 
 ```
-. ./scripts/build.sh
+. ./scripts/build.sh <dir_to_install_to>
 runFromFile -hard <dir_to_jqt_sources>/samples/PythiaEventsTune14PtHat120.pu14 -pileup <dir_to_jqt_sources>/samples/ThermalEventsMult12000PtAv0.70.pu14 -nev 10
 ```
 
