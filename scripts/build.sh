@@ -40,7 +40,9 @@ SCRIPTPATH=$(thisdir)
 
 mkdir -p ${SCRIPTPATH}/../build
 cd ${SCRIPTPATH}/../build
-cmake -DCMAKE_INSTALL_PREFIX=${INSTALL_DIR} -DCMAKE_BUILD_TYPE=Release ${HOME}/devel/jqt \
+SOURCE_DIR=$(abspath "${SCRIPTPATH}/../")
+echo "[debug] source dir is: ${SOURCE_DIR}"
+cmake -DCMAKE_INSTALL_PREFIX=${INSTALL_DIR} -DCMAKE_BUILD_TYPE=Release ${SOURCE_DIR} \
 && cmake --build . --target all -- -j $(n_cores) \
 && cmake --build . --target install
 cd -
