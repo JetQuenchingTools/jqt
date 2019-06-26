@@ -22,7 +22,7 @@ Make sure that the root-config, pythia8-config and fastjet-config executables ca
 
 ```
 . ./scripts/build.sh
-./runFromFile -hard <dir_to_jqt_sources>/samples/PythiaEventsTune14PtHat120.pu14 -pileup <dir_to_jqt_sources>/samples/ThermalEventsMult12000PtAv0.70.pu14 -nev 10
+runFromFile -hard <dir_to_jqt_sources>/samples/PythiaEventsTune14PtHat120.pu14 -pileup <dir_to_jqt_sources>/samples/ThermalEventsMult12000PtAv0.70.pu14 -nev 10
 ```
 
 ## Install on lxplus (in the process of making up-to-date)
