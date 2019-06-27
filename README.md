@@ -1,6 +1,8 @@
 # Jet Quenching Tools (jqt) 
 
-  - moved JetToyHI - no changes in implementation
+  - moved JetToyHI - `almost` no changes in implementation
+  - a warning fixed for `std::vector<double> softDropGroomer::getJetProfile(Int_t i) const`
+     - returning empty vector if `i` outside of expected range
 
 ## Software
 
