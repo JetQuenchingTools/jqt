@@ -38,6 +38,19 @@ function thisdir()
 }
 SCRIPTPATH=$(thisdir)
 
+function abspath()
+{
+  case "${1}" in
+    [./]*)
+    echo "$(cd ${1%/*}; pwd)/${1##*/}"
+    ;;
+    *)
+    echo "${PWD}/${1}"
+    ;;
+  esac
+}
+export -f abspath
+
 mkdir -p ${SCRIPTPATH}/../build
 cd ${SCRIPTPATH}/../build
 SOURCE_DIR=$(abspath "${SCRIPTPATH}/../")
